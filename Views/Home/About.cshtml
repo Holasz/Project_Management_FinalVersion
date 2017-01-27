@@ -1,0 +1,83 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+<head>
+    <style type="text/css">
+        .tg {
+            border-collapse: collapse;
+            border-spacing: 0;
+            border-color: #ccc;
+            margin: 0px auto;
+        }
+
+            .tg td {
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+                padding: 10px 5px;
+                border-style: solid;
+                border-width: 1px;
+                overflow: hidden;
+                word-break: normal;
+                border-color: #ccc;
+                color: #333;
+                background-color: #fff;
+            }
+
+            .tg th {
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+                font-weight: normal;
+                padding: 10px 5px;
+                border-style: solid;
+                border-width: 1px;
+                overflow: hidden;
+                word-break: normal;
+                border-color: #ccc;
+                color: #333;
+                background-color: #f0f0f0;
+            }
+
+            .tg .tg-cells {
+                vertical-align: top;
+            }
+    </style>
+</head>
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<p>Use this area to provide additional information.</p>
+
+<!-- <p>Author:  @ViewBag.Author </p>  -->
+<p > Author: <span style="color:coral"> @Model.Author </span> </p>
+
+@Model.Message
+
+<h2 style="text-align:center"> Team members </h2>
+<table class="tg">
+    <tr>
+        <th class="tg-cells">No.</th>
+        <th class="tg-cells">Name</th>
+        <th class="tg-cells">Job</th>
+    </tr>
+    <tr>
+        <td class="tg-cells">1</td>
+        <td class="tg-cells">Moni Holasz</td>
+        <td class="tg-cells">Designer and Web Developer</td>
+    </tr>
+    <tr>
+        <td class="tg-cells">2</td>
+        <td class="tg-cells">Kati Holasz</td>
+        <td class="tg-cells">Backend Developer</td>
+    </tr>
+    <tr>
+        <td class="tg-cells">3</td>
+        <td class="tg-cells">Boske Holasz</td>
+        <td class="tg-cells">BA</td>
+    </tr>
+</table>
+<br />
+<div style="text-align:justify">
+    Connect with our sales offices, and support and technology centers around the world. <br />
+    Find our policies and terms of use, plus information about compliance, intellectual property, and corporate governance. <br />
+    Get in tough with us. Contact us!
+</div>
